@@ -50,6 +50,14 @@ Positionのみ固定し、Rotationは固定しません。
 - 動作原理は同じですが、こちらはUnity 2019以降は非推奨の機能を使用しています。
 
 
+# Note
+- HMDを固定する方法はいくつかありますが、その1つだとお考えください。
+- 例えば以下のような方法があります。
+    - XRRigのTracked Pose DriverのTracking Typeを変更する
+    - `XRDevice.DisableAutoXRCameraTracking`を使用する
+    - Oculusの場合、OVR Managerの中のUse Position Trackingをオフにする
+- これらがうまくいかない場合に、解決策の1つとしてお試しいただければと思います。
+
 # Versions
 - 1.0: 2020/11/22
 - 1.1: 2022/4/18
